@@ -111,6 +111,10 @@ Follow these steps to add a new device in the ESPHome Dashboard:
      friendly_name: "Your panel's friendly name"
      wifi_ssid: !secret wifi_ssid
      wifi_password: !secret wifi_password
+     static_ip: ${static_ip}
+     gateway: ${gateway}
+     subnet: ${subnet}
+     dns1: ${dns1}
      nextion_update_url: "http://homeassistant.local:8123/local/nspanel_eu.tft"  # Optional
      # Add-on configuration (if needed)
      # heater_relay: "1"  # Possible values: "1" or "2"
