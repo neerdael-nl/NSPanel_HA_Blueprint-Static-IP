@@ -1,5 +1,8 @@
 # NSPanel Custom with HA Blueprint
 
+Please visit: 
+docs/install.md for the main changes you need to make to your substitutions to use this blueprint instead.
+
 This innovative solution is designed to revolutionize how you interact with your Sonoff NSPanel.
 Our goal? To make the customization of your NSPanel seamless, intuitive, and completely code-free!
 
