@@ -117,7 +117,7 @@ wifi:
       ssid: ${wifi_ssid}
       password: ${wifi_password}
       manual_ip:
-        static_ip: ${gateway}
+        static_ip: ${static_ip}
         gateway: ${gateway}
         subnet: ${subnet}
         dns1: ${dns1}
