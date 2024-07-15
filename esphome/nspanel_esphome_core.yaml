@@ -116,6 +116,11 @@ wifi:
     - id: wifi_default
       ssid: ${wifi_ssid}
       password: ${wifi_password}
+      manual_ip:
+        static_ip: ${gateway}
+        gateway: ${gateway}
+        subnet: ${subnet}
+        dns1: ${dns1}
   on_connect:
     then:
       - script.execute: refresh_wifi_icon
