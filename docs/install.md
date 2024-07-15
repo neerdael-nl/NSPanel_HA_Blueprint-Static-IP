@@ -104,6 +104,7 @@ Follow these steps to add a new device in the ESPHome Dashboard:
    ![Device Name](pics/ha_esphome_dashboard_new_device_05b.png)
 
 8. Clear all existing content and paste the following YAML configuration:
+   #### YAML Comfiguration
    ```yaml
    substitutions:
      # Settings - Editable values
@@ -126,7 +127,7 @@ Follow these steps to add a new device in the ESPHome Dashboard:
    # Core and optional configurations
    packages:
      remote_package:
-       url: https://github.com/Blackymas/NSPanel_HA_Blueprint
+       url: 'https://github.com/neerdael-nl/NSPanel_HA_Blueprint-Static-IP'
        ref: main
        refresh: 300s
        files:
@@ -143,13 +144,13 @@ Follow these steps to add a new device in the ESPHome Dashboard:
 
    ![YAML Code](pics/ha_esphome_dashboard_new_device_06.png)
 
-9. Modify the **Settings** section with your device name (as noted in step 7) and Wi-Fi details.  
+10. Modify the **Settings** section with your device name (as noted in step 7) and Wi-Fi details.  
    ![Edit Settings](pics/ha_esphome_dashboard_new_device_06b.png)
 
-10. For Wi-Fi credentials, use `!secret` for added security or input them directly.
+11. For Wi-Fi credentials, use `!secret` for added security or input them directly.
 Learn about secrets in ESPHome: [Home Assistant Secrets in ESPHome](https://www.youtube.com/watch?v=eW4vKDeHh7Y).
 
-11. (Optional) Adjust `nextion_update_url` to the URL of a TFT file hosted on an HTTP or HTTPS server,
+12. (Optional) Adjust `nextion_update_url` to the URL of a TFT file hosted on an HTTP or HTTPS server,
     ensuring that the file is accessible to the NSPanel.
     This URL will be used by ESPHome to download the TFT file to your panel.
     For more information on hosting the TFT file and setting up the URL, see the [Upload TFT](#upload-tft) section.
@@ -160,11 +161,11 @@ Learn about secrets in ESPHome: [Home Assistant Secrets in ESPHome](https://www.
     > The support for HTTPS in this context can be unstable,
     > often leading to issues with file transfers.
 
-12. (Optional) Enhance security with API encryption by adding the copied key from step 6 to the **My Customization** area.
+13. (Optional) Enhance security with API encryption by adding the copied key from step 6 to the **My Customization** area.
     > [!TIP]
     > You can get a new randomly generated valid key from [ESPHome Native API Component](https://esphome.io/components/api.html#configuration-variables) page.
 
-13. After finalizing settings, click **Save** and close the YAML window.
+14. After finalizing settings, click **Save** and close the YAML window.
 
 Your NSPanel is now configured in your ESPHome Dashboard.
 
